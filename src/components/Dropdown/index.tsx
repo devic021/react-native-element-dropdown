@@ -377,6 +377,8 @@ const DropdownComponent: <T>(
           <View style={styles.dropdown}>
             {renderLeftIcon?.(visible)}
             <Text
+              ellipsizeMode='tail'
+              numberOfLines={1}
               style={[
                 styles.textItem,
                 isSelected !== null ? selectedTextStyle : placeholderStyle,
@@ -435,6 +437,8 @@ const DropdownComponent: <T>(
               ) : (
                 <View style={styles.item}>
                   <Text
+                    ellipsizeMode='tail'
+                    numberOfLines={1}
                     style={StyleSheet.flatten([
                       styles.textItem,
                       itemTextStyle,
